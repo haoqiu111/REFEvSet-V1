@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper given under preferred-citation."
+title: "REF-EvSet: Whitened Set Tokens for Reference-Only Event-Camera Fault Diagnosis (code)"
+type: software
+authors:
+  - name: "Author names to be added"
+license: MIT
+preferred-citation:
+  type: article
+  title: "REF-EvSet: Whitened Set Tokens for Reference-Only Event-Camera Fault Diagnosis"
+  authors:
+    - name: "Author names to be added"
+  journal: "Mechanical Systems and Signal Processing"
+  year: 2026
+  status: submitted
+  notes: "Under review"

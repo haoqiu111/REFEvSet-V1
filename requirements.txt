@@ -1,0 +1,12 @@
+# Tested with Python 3.12 on one RTX 5090 (PyTorch 2.13 + CUDA 13.2).
+# Install the PyTorch build that matches your CUDA version first if the default wheel does not.
+torch>=2.13,<3
+numpy>=2.4,<3
+scipy>=1.18,<2
+scikit-learn>=1.9,<2
+matplotlib>=3.10,<4
+
+# Optional, only for scripts/make_fig_framework.py (Fig. 1; Windows with Microsoft PowerPoint installed):
+# python-pptx>=1.0
+# lxml>=6
+# pywin32
