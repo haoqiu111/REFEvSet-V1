@@ -57,29 +57,6 @@ Pump is saturated once the healthy reference enters the input: the reference-sub
 0.999 and 1.000 and is above REF-EvSet (0.988 and 0.994). With a held-out camera angle (HO-A) no method
 exceeds 0.56 (REF-EvSet 0.510 ± 0.015, oracle 0.497; Table 4).
 
-## Repository layout
-
-```
-evset/                      Python package
-  data/dat_reader.py          memory-mapped reader for Prophesee .dat event files
-  data/registry.py            file registry of the Rotor / Pump / Beam subsets (data root from EVSET_DATA)
-  data/rotor_dataset.py       in-memory whitened tokens (log SNR) and domain references
-  features/patch_rate.py      level 1: per-patch (16 x 16 px), per-polarity event counts on a fine time grid
-  features/order_tokens.py    level 2: shaft-frequency tracking and exact-order DFT per patch
-  eval/protocol.py            Reference-Only protocols (reference / guard / evaluation segments, task families)
-  models/evset_net.py         the set encoder (order-axis convolution, ISAB x 2, PMA, classifier) and its ablation variants
-  physics/event_sim.py        one-dimensional event-sensor simulator
-  plot_style.py               figure style
-scripts/                    cache builders, training, evaluation, tables and figures (see below)
-reproduce.sh                staged reproduction pipeline (stages 0 to 8)
-run_*.sh                    serial GPU queues called by reproduce.sh
-outputs/                    result files of the paper: one JSON per (run, task) with window predictions,
-                            linear-baseline logs, physics / calibration JSON files, summary tables
-results/expected_tables.md  Tables 1 to 8 of the paper (the verification script parses Table 3)
-figures/                    the ten figures of the paper (png + pdf) and the editable fig_framework.pptx
-docs/DATA.md                data preparation
-```
-
 ## Installation
 
 Python 3.12 and a CUDA-capable PyTorch build are required for the cache builders and for training (the training
