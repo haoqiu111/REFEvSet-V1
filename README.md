@@ -27,7 +27,7 @@ cell. "+ ref." marks a re-implemented paradigm whose input is the reference-subt
 |---|---|---|---|---|---|
 | EF-CNN + ref. | healthy reference | 0.611 ± 0.060 | 0.589 ± 0.032 | 0.688 ± 0.039 | 0.629 |
 | EVS-T + ref. | healthy reference | 0.730 ± 0.035 | 0.717 ± 0.026 | 0.711 ± 0.026 | 0.719 |
-| BiFovea-T + ref. | healthy reference | 0.712 ± 0.007 | 0.829 ± 0.017 | 0.770 ± 0.008 | 0.771 |
+| BiFovea-T + ref. | healthy reference | 0.712 ± 0.007 | 0.819 ± 0.017 | 0.770 ± 0.008 | 0.767 |
 | SNN + ref. | healthy reference | 0.791 ± 0.006 | 0.782 ± 0.015 | 0.812 ± 0.007 | 0.795 |
 | Linear (deployable baseline) | healthy reference | 0.702 | 0.745 | 0.688 | 0.712 |
 | **REF-EvSet** | healthy reference | 0.786 ± 0.014 | 0.824 ± 0.029 | 0.797 ± 0.025 | **0.802** |
